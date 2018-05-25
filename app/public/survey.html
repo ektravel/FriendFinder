@@ -198,7 +198,8 @@
                 $.post("/api/friends", newSurvey)
                     .then(function (data) {
                         console.log(data);
-                        alert("Adding survey results...");
+                        console.log('data.name is : '+ data.name);
+                        alert("Your bff is " + data.name + '. Their URL is + ' + data.photo);
                     });
             });
         </script>
