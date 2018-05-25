@@ -10,7 +10,7 @@ module.exports = function(app){
         for (i = 0; i < friends.length; i++){
             friends.push(req.body);
             console.log("New user added!");
-            // res.json(true);
+            res.json(false);
         };
     });
 };
