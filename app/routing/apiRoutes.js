@@ -59,16 +59,16 @@ module.exports = function(app){
 
             var currentDifference = user1CurrentAnswer - user2CurrentAnswer;
 
-            console.log('diff between ' + user1.name + ' and ' + user2.name + ' score for ' + x + 'is ' + currentDifference);
+            console.log("diff between " + user1.name + " and " + user2.name + " score for " + x + "is " + currentDifference);
 
             if (currentDifference < 0 ){
                 currentDifference = currentDifference* -1;
             }
             score += currentDifference;
-            console.log('new score is ' + score);
+            console.log("new score is " + score);
         }
 
-        console.log('returning overall diff score of ' + score);
+        console.log("returning overall diff score of " + score);
         return score;
     }
 };
